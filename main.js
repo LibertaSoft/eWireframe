@@ -6,13 +6,31 @@ let win
 
 function createWindow () {
   // Create the browser window.
-  win = new BrowserWindow({width: 800, height: 600})
+  win = new BrowserWindow({
+	backgroundColor: '#181818',
+	center: true,
+	// fullscreen: false,
+
+	// icon: getIconPath(),
+	// maximizable: false,
+	// minimizable: false,
+	// resizable: false,
+	// show: false,
+	// skipTaskbar: true,
+	title: 'eWireframe',
+	// useContentSize: true,
+	width: 1200,
+	height: 800,
+	// minWidth: 400,
+	// minHeight: 200
+  });
+  win.setMenu(null);
 
   // and load the index.html of the app.
   win.loadURL(`file://${__dirname}/index.html`)
 
   // Open the DevTools.
-  win.webContents.openDevTools()
+  // win.webContents.openDevTools()
 
   // Emitted when the window is closed.
   win.on('closed', () => {
