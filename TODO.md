@@ -1,7 +1,0 @@
-- [x] Create repository
-- [ ] Initialize project `npm init` and install dependecies, configurate
-- [ ] Create start page react-component
-  - [ ] Create button for begin new project
-  - [ ] Create component for view recent projects
-    - [ ] Writable locations for any OS
-- [ ] Create component for project around
